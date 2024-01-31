@@ -1,0 +1,33 @@
+﻿<Window x:Class="Сессия1.SpisokKLient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Сессия1"
+        mc:Ignorable="d"
+        Title="Список клиентов" Height="504.315" Width="897.847" ResizeMode="NoResize" Closing="Window_Closing" >
+    <Grid>
+        <Label Content="Школа иностранных языков&quot;Лангуаге&quot;" HorizontalAlignment="Left" Margin="88,32,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="18"/>
+        <Image Margin="17,14,0,0" Source="school_logo.png" Stretch="Fill" Width="66" HorizontalAlignment="Left" Height="72" VerticalAlignment="Top"/>
+        <DataGrid HorizontalAlignment="Left" Height="286" Margin="12,104,0,0" VerticalAlignment="Top" Width="864" Name="dataGrid" FontFamily="Comic Sans MS">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.509"/>
+                    <RotateTransform Angle="0.573"/>
+                    <TranslateTransform Y="-0.444"/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+        </DataGrid>
+        <Label Content="Поиск:" HorizontalAlignment="Left" Margin="618,40,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="691,40,0,0" Name="artik" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184" FontFamily="Comic Sans MS" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="-127,345,0,0" VerticalAlignment="Top"/>
+        <Label Content="Фильтр:" HorizontalAlignment="Left" Margin="618,67,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" Width="57"/>
+        <ComboBox HorizontalAlignment="Left" x:Name="man" Margin="691,72,0,0" VerticalAlignment="Top" Width="184" SelectionChanged="man_SelectionChanged">
+            <ComboBoxItem Content="Все" HorizontalAlignment="Left" Width="118" IsSelected="True"/>
+        </ComboBox>
+        <Button Content="Назад" Name="nazad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Margin="17,416,0,0" Background="#FF04A0FF" BorderBrush="Black" Height="26" FontFamily="Comic Sans MS" Click="nazad_Click"/>
+        <Button Content="Далее" Name="vpered" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Margin="786,416,0,0" Background="#FF04A0FF" BorderBrush="Black" Height="26" FontFamily="Comic Sans MS"/>
+
+    </Grid>
+</Window>
